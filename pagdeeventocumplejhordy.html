@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evento Ficticio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            background-image: url('https://th.bing.com/th/id/R.f598d725e8aff5b4d475178a4f63ec85?rik=iCHsuiP%2fDU5KvQ&pid=ImgRaw&r=0');
+            background-size: cover;
+            background-position: center;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco semitransparente */
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+        h1 {
+            color: #007BFF;
+        }
+        .event-info {
+            margin-bottom: 20px;
+        }
+        .event-info p {
+            line-height: 1.6;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .form-group textarea {
+            resize: vertical;
+            height: 100px;
+        }
+        .form-group button {
+            padding: 10px 15px;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .form-group button:hover {
+            background-color: #0056b3;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>PRE INVITACION AL CUMPLE DE JHORDY</h1>
+        </header>
+
+        <section class="event-info">
+            <h2>Detalles del Happy Birthday</h2>
+            <p><strong>Fecha:</strong> 15 de Octubre de 2024</p>
+            <p><strong>Hora:</strong> 10:00 AM - 5:00 PM</p>
+            <p><strong>Ubicación:</strong> Discoteca la "LLAVE 2", Calle al frente de Ciencias de la Educación, Ciudad de El Alto UPEA</p>
+            <p>VEN Y DISFRUTA DE LA TORTA, LOS TRAGOS Y SI NO TE ACUERDAS NO PASOOOOO.. NO APTO PARA CARDIACOS. ¡No te lo pierdas!</p>
+        </section>
+
+        <section class="registration">
+            <h2>Formulario de Asistencia</h2>
+            <form action="/submit-registration" method="post">
+                <div class="form-group">
+                    <label for="full-name">Nombre Completo:</label>
+                    <input type="text" id="full-name" name="full_name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Teléfono:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Comentarios Adicionales:</label>
+                    <textarea id="message" name="message"></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit">Inscribirse</button>
+                </div>
+            </form>
+        </section>
+
+        <footer class="footer">
+            <p>&copy; 2024 Cumpleños de Jhordy Daniel Alejo Llusco. Todos los derechos reservados de tu servidor.</p>
+        </footer>
+    </div>
+</body>
+</html>
